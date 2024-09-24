@@ -2,11 +2,13 @@
 
 Problem: Our cat Tristan continually changes his eating habits and schedule. We experiment with different food and different times for feeding in order to see what works best. This makes it difficult to maintain a habit, especially with 2 people responsible for feeding Tristan in the household.
 
-Solution: Create a program to simplify the feeding process. The program will be coded with React and TypeScript, should ideally only include one page for simplicity, and should include:
+Solution: Create a program to simplify the feeding process. The program will be coded with React and TypeScript using TailwindCSS for simplicity, and should ideally only include one page.
+
+Program functionality (and possible level ups):
 
 - a list of Tristan's mealtimes and what he is fed during each mealtime
 - the possibility to change both his food options and the meal times
-- (possible levels: level 1 - session based, level 2 - using local storage, level 3 - using an API)
+- (level 1 - session based, level 2 - using local storage, level 3 - using an API)
 - A simple check-function whenever Tristan is fed
 - (possible level up: a notes function, writing how well he ate, which parts of the meal he ate, etc)
 
