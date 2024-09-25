@@ -9,11 +9,35 @@ function App() {
   //STEP 1: MEALTIMES
   //create a "mealtime" component with a mealtime-object
   //mealtime object {food: "", time: "", notes: "", check: true/false}
+  //map out all the mealtimes via mealtime component
+  //before adding user inputs, make the Meal component look visually good.
 
-  //STEP 2: USER INPUT
-  //make sure the user can check and uncheck the mealtime object check, and edit the notes
-
-  //STEP 3: SAVE USER INPUT
+  const listOfMeals: Meal[] = [
+    {
+      food: "1 boll färskfoder",
+      time: "6.00",
+      notes: "no notes",
+      check: true,
+    },
+    {
+      food: "1/2 turkey monster",
+      time: "12:00",
+      notes: "no notes",
+      check: true,
+    },
+    {
+      food: "1/2 chicken monster",
+      time: "16:00",
+      notes: "no notes",
+      check: false,
+    },
+    {
+      food: "1 boll färskfoder",
+      time: "22:00",
+      notes: "no notes",
+      check: false,
+    },
+  ];
 
   return (
     <main className="flex items-center justify-center flex-col ">
@@ -21,7 +45,9 @@ function App() {
         <h1>TRISTAN FEEDING GENERATOR</h1>
         <h2>mjau mjau</h2>
       </div>
-      <Meal />
+      {listOfMeals.map((meal: Meal) => {
+        return <Meal meal={meal} />;
+      })}
     </main>
   );
 }
